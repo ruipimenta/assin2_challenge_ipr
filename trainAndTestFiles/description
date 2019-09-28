@@ -1,1 +1,3 @@
 The files in this directory are the input files for the bert model. They were converted from the correspondent xml files.
+assin1_ptbr-assin2-shuf-train-only.tsv contains the train data from assin2 and ptbr dev and train files from assin1 challenge.
+assin1_ptbrpt-assin2-shuf-train-only.tsv contains the train data from assin2 and all train and  dev files from assin1 challenge.
