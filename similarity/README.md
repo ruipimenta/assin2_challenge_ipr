@@ -1,4 +1,4 @@
-Intructions to (almost) reproduce our similarity submissions,submission1 and submission3 (submission2 contained an error).
+Intructions to (almost*) reproduce our similarity submissions,submission1 and submission3 (submission2 contained an error).
 
 We used the Bert model and adaped the code in https://github.com/google-research/bert to the task.
 
@@ -25,3 +25,7 @@ We used the Bert model and adaped the code in https://github.com/google-research
   
        bert_config.json =
   
+
+
+
+* Our submission used a cloud TPU, if you run this code on the cpu the output will have a small difference on each prediction(<0.02).
