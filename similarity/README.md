@@ -26,6 +26,6 @@ We used the Bert model and adaped the code in https://github.com/google-research
        bert_config.json =
   
 
-
+teste https://drive.google.com/drive/folders/1GkxkmoGrfDIPJYNP7z5hlFrI804G8728?usp=sharing
 
 * Our submission used a cloud TPU, if you run this code on the cpu the output will have a small difference on each prediction(<0.02).
