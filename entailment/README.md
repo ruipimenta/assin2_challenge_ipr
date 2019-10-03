@@ -6,7 +6,7 @@ We used the Bert model and adaped the code in https://github.com/google-research
 
 3- bertDir 
 
-Download the multilingue bert model (fine tuned to portuguese vocabular) zip file:https://drive.google.com/file/d/1S1B-TR0E0H1zXDvA7iedm49H_iJwP_Uw/view?usp=sharing
+Download the multilingue bert model (fine tuned to portuguese vocabular) zip file:https://drive.google.com/file/d/1S1B-TR0E0H1zXDvA7iedm49H_iJwP_Uw/view?usp=sharing and put all the files in the bertDir
 
 4-  modelDir
 
