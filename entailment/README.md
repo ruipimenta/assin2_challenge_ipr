@@ -23,7 +23,7 @@ Download the multilingue bert model (fine tuned to portuguese vocabular) zip fil
  
           python3 github_cpuPredictAssin2Entail.py
  
- 9- The predictions are in a three columns file, test_entail_results.tsv, each column contains the predicted probabilities of: 'Entailment', 'None' and 'Paraphrase' (this last option should never occur in ASSIN2).  
+ 9- The predictions will go to  a three columns file, test_entail_results.tsv, where the columns contain the predicted probabilities of: 'Entailment', 'None' and 'Paraphrase' (this last option should never occur in ASSIN2).  
  
  
 Our submission used a cloud TPU, if you run this code on the cpu the output will have a small difference on each prediction (it will give a slightly better result than our submission)
