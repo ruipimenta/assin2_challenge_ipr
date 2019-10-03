@@ -19,6 +19,13 @@ We used the Bert model and adaped the code in https://github.com/google-research
 
 6- outputDir: where the predictions file will go
 
+7- Edit the file github_cpuPredictAssin2Similarity.py to define the strings bertDir, modelDir, inputDir and outputDir.
+
+8- Run the above script:
+
+      python3 github_cpuPredictAssin2Similarity.py
+9- The predictions will go to a three columns file, test_similarity_results.tsv,
+
 
 
 * Our submission used a cloud TPU, if you run this code on the cpu the output will have a small difference on each prediction.
