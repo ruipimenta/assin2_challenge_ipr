@@ -15,7 +15,9 @@ We used the Bert model and adaped the code in https://github.com/google-research
    Download the zip file, https://drive.google.com/file/d/1cbfdQJz7q4Nd2e3aNMv2t17RFr3xNNOo/view?usp=sharing
    and put all the files in the modelDir
    
+5- inputDir: where the train dev and test tsv files are
 
+6- outputDir: where the predictions file will go
 
 
 
