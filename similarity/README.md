@@ -6,13 +6,13 @@ We used the Bert model and adaped the code in https://github.com/google-research
 2- You must create two other directories for input and output: dataDir and outputDir
 
 3- bertDir
-  - Submission1: as starting point we used Bert-Base Multilingual Cased. 
+  - We used as starting point Bert-Base Multilingual Cased. 
     
   Download the zip file,   https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip
   and put all the files in the bertDir.
   
 4- modelDir
-   Download the zip file, 
+   Download the zip file, https://drive.google.com/file/d/1cbfdQJz7q4Nd2e3aNMv2t17RFr3xNNOo/view?usp=sharing
    and put all the files in the modelDir
    
 
