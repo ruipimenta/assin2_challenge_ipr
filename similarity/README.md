@@ -1,4 +1,4 @@
-Intructions to (almost*) reproduce our similarity submissions,submission1 and submission3 (submission2 contained an error).
+Intructions to (almost*) reproduce our similarity submission1 predictions.
 
 We used the Bert model and adaped the code in https://github.com/google-research/bert to the task.
 
@@ -11,21 +11,12 @@ We used the Bert model and adaped the code in https://github.com/google-research
   Download the zip file,   https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip
   and put all the files in the bertDir.
   
-  -Submission3: as starting point we used a Bert model trained with  portuguese texts (Wikipedia, CETELEMPublico and Folha de São Paulo).
-  
-     Download and put the following files in bertDir:
-  
-       model.ckpt-60475.data-00000-of-00001= https://drive.google.com/drive/folders/1HuuRkcS9r9k6ODRwozoWngr8-BdRLR70?usp=sharing
-  
-       model.ckpt-60475.index= https://drive.google.com/file/d/1OAP-catkd1PZtQHO9-qIU6UgVoRO70cs/view?usp=sharing
-  
-       model.ckpt-60475.meta = https://drive.google.com/file/d/1VzMenEgDudDSuPwdybnUcsXFi0i1ddRg/view?usp=sharing
-  
-       vocab.txt =
-  
-       bert_config.json =
-  
+4- modelDir
+   Download the zip file, 
+   and put all the files in the modelDir
+   
 
-teste https://drive.google.com/drive/folders/1GkxkmoGrfDIPJYNP7z5hlFrI804G8728?usp=sharing
 
-* Our submission used a cloud TPU, if you run this code on the cpu the output will have a small difference on each prediction(<0.02).
+
+
+* Our submission used a cloud TPU, if you run this code on the cpu the output will have a small difference on each prediction.
