@@ -1,30 +1,29 @@
 Intructions to (almost*) reproduce our similarity submission1 predictions.
 
-We used the Bert model and adaped the code in https://github.com/google-research/bert to the task.
+We used the Bert model and adapted the code in https://github.com/google-research/bert to the task.
 
-1 - You must create two directories where bert configuration files and neural network weights will go: bertDir and modelDir .
-2- You must create two other directories for input and output: dataDir and outputDir
+1 - You must create four directories: bertDir, modelDir, dataDir and outputDir .
 
-3- bertDir
+2- bertDir , where bert configuration files are.
   - We used as starting point Bert-Base Multilingual Cased. 
     
   Download the zip file,   https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip
   and put all the files in the bertDir.
   
-4- modelDir
+3- modelDir, where final neural network weights will go.
    Download the zip file, https://drive.google.com/file/d/1cbfdQJz7q4Nd2e3aNMv2t17RFr3xNNOo/view?usp=sharing
    and put all the files in the modelDir
    
-5- inputDir: where the train dev and test tsv files are
+4- inputDir: where the train dev and test tsv files are
 
-6- outputDir: where the predictions file will go
+5- outputDir: where the predictions file will go
 
-7- Edit the file github_cpuPredictAssin2Similarity.py to define the strings bertDir, modelDir, inputDir and outputDir.
+6- Edit the file github_cpuPredictAssin2Similarity.py to define the strings bertDir, modelDir, inputDir and outputDir.
 
-8- Run the above script:
+7- Run the above script:
 
       python3 github_cpuPredictAssin2Similarity.py
-9- The predictions will go to a three columns file, test_similarity_results.tsv,
+8- The predictions will go to the file, test_similarity_results.tsv.
 
 
 
