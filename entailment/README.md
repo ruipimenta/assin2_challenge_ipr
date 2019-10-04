@@ -1,6 +1,6 @@
 Instructions to (almost*) reproduce our entailment submission1
 
-We used the Bert model and adaped the code in https://github.com/google-research/bert to the task.
+We used the Bert model and adapted the code in https://github.com/google-research/bert to the task.
 
 It requires  python tensorflow 1 (we used python3 and tensorflow-1.14).
 
