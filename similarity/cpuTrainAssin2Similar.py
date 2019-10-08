@@ -45,13 +45,13 @@ import tensorflow as tf
 
 
 #bertDir -> where the initial model files are
-bertDir = "/home/rui/research/language/assin_challenge/bert-master/multi_cased_L-12_H-768_A-12/"
+bertDir = 
 
 # dataDir -> where tsv files are
-dataDir = "/home/rui/research/language/assin_challenge/assin2/novosDadosAssin2/"
+dataDir = 
 
 # you must define an output directory where the new weights will go
-output_dir =  "/home/rui/research/language/assin_challenge/generateResults/similarity/multilingue/train_output_dir/"
+output_dir =  
 
 
 learning_rate = 1.0e-5
@@ -70,13 +70,10 @@ restoreFile = None
 # Assin input 'tsv'-files
 
 # dataDir -> where tsv files are
-
+dataDir =
+    
 devtsv = 'assin2-dev.tsv'
-#traintsv = 'assin2-shuf-train-only.tsv'
-#traintsv = 'assin1_assin2-shuf-train-only.tsv' # add all assin1_ptbr data to train 
 traintsv = 'assin1_ptbrpt-assin2-shuf-train-only.tsv'
-#testtsv = 'assin2-dev.tsv'
-#testtsv = 'assin1-ptbr-test.tsv'
 testtsv = 'assin2-blind-test.tsv'
 
 init_checkpoint = bertDir + "bert_model.ckpt"
@@ -263,7 +260,6 @@ class assin2SimilarityProcessor(DataProcessor):
         """See base class."""
         return self._create_examples(
             self._read_tsv(os.path.join(data_dir, devtsv)), "dev")
-            #self._read_tsv(os.path.join(data_dir, traintsv)), "dev")
     
     def get_test_examples(self, data_dir):
         """See base class."""
@@ -631,15 +627,6 @@ def model_fn_builder(bert_config, init_checkpoint, learning_rate,
     elif mode == tf.estimator.ModeKeys.EVAL:
 
       def metric_fn(label_ids, logits, is_real_example):
-        # predictions = tf.argmax(logits, axis=-1, output_type=tf.int32)
-        # accuracy = tf.metrics.accuracy(
-        #     labels=label_ids, predictions=predictions, weights=is_real_example)
-        # loss = tf.metrics.mean(values=per_example_loss, weights=is_real_example)
-        # return {
-        #     "eval_accuracy": accuracy,
-        #     "eval_loss": loss,
-        # }
-
         # Compute MSE
         mse = tf.metrics.mean_squared_error(label_ids, logits)
 
@@ -835,9 +822,6 @@ def main(_):
 
     predict_file = os.path.join(FLAGS.output_dir, "predict.tf_record")
     
-    #file_based_convert_examples_to_features(predict_examples, label_list,
-    #                                        FLAGS.max_seq_length, tokenizer,
-    #                                        predict_file)
     file_based_convert_examples_to_features(predict_examples,
                                             FLAGS.max_seq_length, tokenizer,
                                             predict_file)
