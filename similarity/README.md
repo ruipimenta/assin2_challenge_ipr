@@ -1,4 +1,14 @@
+Here you have instructions and scripts to either 1) use our trained model to generate our predictions or 2) train a model, as we did, fine-tunning Bert's model. 
+
+
+
+# Generate predictions
+
+
 Intructions to (almost*) reproduce our similarity submission1 predictions.
+
+* Our submission used a cloud TPU, if you run this code on the cpu the output will have a small difference on each prediction.
+
 
 We used the Bert model and adapted the code in https://github.com/google-research/bert to the task.
 
@@ -26,5 +36,29 @@ We used the Bert model and adapted the code in https://github.com/google-researc
 8- The predictions will go to the file, test_similarity_results.tsv.
 
 
+# Train a model on the Similarity Task
 
-* Our submission used a cloud TPU, if you run this code on the cpu the output will have a small difference on each prediction.
+As above we used the Bert model and adapted the code in https://github.com/google-research/bert to the task.
+
+1 - You must create four directories: bertDir, dataDir and outputDir .
+
+2- bertDir , where bert configuration files are.
+  - We used as starting point Bert-Base Multilingual Cased. 
+    
+  Download the zip file,   https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip
+  and put all the files in the bertDir.
+  
+3- dataDir: where the train dev and test tsv files are
+
+4- outputDir: where the new weights files will go
+
+6- Edit the file github_cpuTrainAssin2Similarity.py to define the strings bertDir, dataDir and outputDir. You must also assigne a value to the variable 'num_train_epochs'. In the submission 1 we used 235 epochs and the of the pearson correlation
+ on the development data was 
+7- Run the above script:
+
+      python3 github_cputrainAssin2Similarity.py
+  
+
+
+
+
