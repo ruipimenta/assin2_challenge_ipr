@@ -52,11 +52,12 @@ As above we used the Bert model and adapted the code in https://github.com/googl
 
 4- outputDir: where the new weights files will go
 
-6- Edit the file github_cpuTrainAssin2Similarity.py to define the strings bertDir, dataDir and outputDir. You must also assigne a value to the variable 'num_train_epochs'. In the submission 1 we used 235 epochs and the of the pearson correlation
- on the development data was 
+6- Edit the file github_cpuTrainAssin2Similarity.py to define the strings bertDir, dataDir and outputDir. You must also assigne a value to the variable 'num_train_epochs'. In our submission1 we used 235 epochs. The of the pearson correlation
+ on the development data was 0.96618927 and the mse was 0.080897026. There is random component on training so you may achieve different values (on the development and test data) with the same number of epochs. Perhaps you may need to restart the training from scratch a few times before we can achieve similar results. In our submission we used the weights that corresponded to our best results on the development set... 
+
 7- Run the above script:
 
-      python3 github_cputrainAssin2Similarity.py
+      python3 github_cpuTrainAssin2Similarity.py
   
 
 
