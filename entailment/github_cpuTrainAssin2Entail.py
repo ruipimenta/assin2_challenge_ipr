@@ -54,7 +54,7 @@ testtsv = 'assin2-blind-test.tsv'
 
 bert_config_file = bertDir + "bert_config.json"
 vocab_file = bertDir + "vocab.txt"
-init_checkpoint = bertDir + "bert_model.ckpt"
+init_checkpoint = bertDir + "model.ckpt-10000"
 
 
 
