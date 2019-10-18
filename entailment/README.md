@@ -7,7 +7,7 @@ It requires  python tensorflow 1 (we used python3 and tensorflow-1.14).
 1 - You must create four directories : bertDir and modelDir, dataDir and outputDir .
 
 2- bertDir, for bert configuration files: 
-      Download the multilingue bert model (fine tuned to portuguese vocabular) zip file:https://drive.google.com/file/d/1S1B-TR0E0H1zXDvA7iedm49H_iJwP_Uw/view?usp=sharing and put all the files in the bertDir .
+      Download the multilingue bert model  https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip and put all the files in the bertDir .
 
 3-  modelDir, for final neural network weights:
       Download the entailment weights zip file: https://drive.google.com/file/d/1la7UY2mtY55dws5ORsVcIHspnx5tjhsI/view?usp=sharing 
