@@ -1,3 +1,8 @@
+Here you have instructions and scripts to either 1) use our trained model to generate our predictions or 2) train a model, as we did, fine-tunning Bert's model.
+
+# Generate predictions
+
+
 Instructions to (almost*) reproduce our entailment submission1
 
 We used the Bert model and adapted the code in https://github.com/google-research/bert to the task.
@@ -27,3 +32,28 @@ It requires  python tensorflow 1 (we used python3 and tensorflow-1.14).
  
  
 Our submission used a cloud TPU, if you run this code on the cpu the output will have a small difference on each prediction (it will give a slightly better result than our submission).
+
+
+# Train a model on the Entailment Task
+As above we used the Bert model and adapted the code in https://github.com/google-research/bert to the task.
+
+1 - You must create four directories: bertDir, dataDir and outputDir .
+
+2- bertDir , where bert configuration files are.
+
+We used as starting point Bert-Base Multilingual Cased.
+Download the zip file, https://storage.googleapis.com/bert_models/2018_11_23/multi_cased_L-12_H-768_A-12.zip and put all the files in the bertDir.
+
+3- dataDir: where the train dev and test tsv files are
+
+4- outputDir: where the new weights files will go
+
+5- Edit the file github_cpuTrainAssin2Entaiment.py to define the strings bertDir, dataDir and outputDir.
+
+You must also assign a value to the variable 'num_train_epochs'. In our submission1 we used 235 epochs. The of the pearson correlation on the development data was 0.96618927 and the mse was 0.080897026. There is random component on training so you may achieve different values (on the development and test data) with the same number of epochs. Perhaps you may need to restart the training from scratch a few times before we can achieve similar results. In our submission we used the weights that corresponded to our best results on the development set...
+
+6- Run the script:
+
+  python3 github_cpuTrainAssin2Similarity.py
+
+
