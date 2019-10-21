@@ -35,7 +35,7 @@ import tensorflow as tf
 # YOU MUST ASSIN THE CORRECT VALUE TO THE FOLLOWING STRINGS
 
 dataDir = # put here the directory where the tsv files are
-bertDir =  # where the fine-tuned (portuguese) multilingue multi_cased_L-12_H-768_A-12 weights are
+bertDir =  # where the fine-tuned (portuguese)  weights are
 modelDir = #  where your model.ckpt-4483* files are
 output_dir = # where the predictions file will go
 
