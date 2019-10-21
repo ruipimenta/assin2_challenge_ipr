@@ -36,7 +36,7 @@ dataDir =
 # you must define an output directory where the new weights will go
 output_dir =  
 
-num_train_epochs = 0.2
+num_train_epochs = 25.0
 learning_rate = 1.0e-5
 
 restoreFile = None
