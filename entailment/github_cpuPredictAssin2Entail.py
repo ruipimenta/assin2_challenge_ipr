@@ -41,7 +41,7 @@ output_dir = # where the predictions file will go
 
 
 devtsv = 'assin2-dev.tsv' 
-traintsv = 'assin-ptbr-train.tsv'
+traintsv = 'assin1-ptbr-assin2-shuf-train-only.tsv'
 testtsv = 'assin2-blind-test.tsv'
 
 do_train = False
