@@ -39,9 +39,8 @@ bertDir =  # where the fine-tuned (portuguese)  weights are
 modelDir = #  where your model.ckpt-4483* files are
 output_dir = # where the predictions file will go
 
-
+traintsv = 'assin1_ptbr-assin2-shuf-train-only.tsv'
 devtsv = 'assin2-dev.tsv' 
-traintsv = 'assin1-ptbr-assin2-shuf-train-only.tsv'
 testtsv = 'assin2-blind-test.tsv'
 
 do_train = False
