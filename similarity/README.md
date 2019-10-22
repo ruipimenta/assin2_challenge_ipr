@@ -58,7 +58,7 @@ You must also assigne a value to the variable 'num_train_epochs'. In our submiss
 
 6- Run the script:
 
-      python3 github_cpuTrainAssin2Similarity.py
+      python3 cpuTrainAssin2Similarity.py
   
 
 
