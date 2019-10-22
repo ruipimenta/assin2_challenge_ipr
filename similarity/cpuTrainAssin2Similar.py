@@ -62,15 +62,6 @@ do_eval = True
 do_predict = False
 
 restoreFile = None
-
-# runing this script from the console:
-# python3 cpuTrainAssinSimilar.py
-
-
-# Assin input 'tsv'-files
-
-# dataDir -> where tsv files are
-dataDir =
     
 devtsv = 'assin2-dev.tsv'
 traintsv = 'assin1_ptbrpt-assin2-shuf-train-only.tsv'
