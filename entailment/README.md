@@ -53,8 +53,10 @@ and put all the files in the bertDir.
 
 You must also assign a value to the variable 'num_train_epochs'. In our submission1 we used 25 epochs. The accuracy of the model on the development data was 0.95%. There is random component on training so you may achieve different values (on the development and test data) with the same number of epochs. Perhaps you may need to restart the training from scratch a few times before we can achieve similar results. In our submission we used the weights that corresponded to our best results on the development set...
 
-6- Run the script:
+
+7- Run the script:
 
   python3 github_cpuTrainAssin2Entail.py
 
 
+8- The initial script run on 64Gb TPU. You may get errors due to the fact that you dont have enought memory. In that case you may reduce the parameters batch_size ( train, eval and predict). With 12Gb GPU we set train_batch_size=16. However, reducing train_batch_size may reduce the performance. 
