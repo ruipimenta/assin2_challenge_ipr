@@ -59,7 +59,9 @@ You must also assigne a value to the variable 'num_train_epochs'. In our submiss
 6- Run the script:
 
       python3 cpuTrainAssin2Similarity.py
-  
+      
+
+7- The initial script run on 64Gb TPU. You may get errors due to the fact that you dont have enought memory. In that case you may reduce the parameters batch_size ( train, eval and predict). With 12Gb GPU we set train_batch_size=16. However, reducing train_batch_size may reduce the performance.  
 
 
 
