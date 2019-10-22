@@ -54,14 +54,14 @@ As above we used the Bert model and adapted the code in https://github.com/googl
 
 5- Edit the file github_cpuTrainAssin2Similarity.py to define the strings bertDir, dataDir and outputDir. 
 
-You must also assigne a value to the variable 'num_train_epochs'. In our submission1 we used 235 epochs. The of the pearson correlation on the development data was 0.96618927 and the mse was 0.080897026. There is random component on training so you may achieve different values (on the development and test data) with the same number of epochs. Perhaps you may need to restart the training from scratch a few times before we can achieve similar results. In our submission we used the weights that corresponded to our best results on the development set... 
+You must also assigne a value to the variable 'num_train_epochs'. In our submission1 we used 235 epochs. The of the pearson correlation on the development data was 0.96618927 and the mse was 0.080897026. There is a random component on training so you may achieve different values (on the development and test data) with the same number of epochs. Perhaps you may need to restart the training from scratch a few times before you can achieve results similar to ours. In our submission we used the weights that corresponded to our best results on the development set... 
 
 6- Run the script:
 
       python3 cpuTrainAssin2Similarity.py
       
 
-7- The initial script run on 64Gb TPU. You may get errors due to the fact that you dont have enought memory. In that case you may reduce the parameters batch_size ( train, eval and predict). With 12Gb GPU we set train_batch_size=16. However, reducing train_batch_size may reduce the performance.  
+7- The initial script run on a 64Gb TPU. You may get errors due to the fact that you dont have enought memory. In that case you may reduce the parameters batch_size ( train, eval and predict). With 12Gb GPU we set train_batch_size=16. However, reducing train_batch_size may reduce the performance.  
 
 
 
