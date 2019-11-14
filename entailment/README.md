@@ -51,7 +51,7 @@ and put all the files in the bertDir.
 
 5- Edit the file github_cpuTrainAssin2Entaiment.py to define the strings bertDir, dataDir and outputDir.
 
-You must also assign a value to the variable 'num_train_epochs'. In our submission1 we used 25 epochs. The accuracy of the model on the development data was 0.95%. There is random component on training so you may achieve different values (on the development and test data) with the same number of epochs. Perhaps you may need to restart the training from scratch a few times before we can achieve similar results. In our submission we used the weights that corresponded to our best results on the development set...
+You must also assign a value to the variable 'num_train_epochs'. In our submission1 we used 25 epochs. The accuracy of the model on the development data was 0.95% (assin script values, tensorflow reported values are worse). There is random component on training so you may achieve different values (on the development and test data) with the same number of epochs. Perhaps you may need to restart the training from scratch a few times before we can achieve similar results. In our submission we used the weights that corresponded to our best results on the development set...
 
 
 7- Run the script:
